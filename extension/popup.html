@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>DiveOS</h1>
+<div id="alert"></div>
+<form action="/presence" method="post">
+<div>
+  <label for="details">Details:</label>
+  <input type="text" id="details" name="details" required>
+</div>
+<div>
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state" required>
+</div>
+<div>
+    <label for="largeKey">Large Key:</label>
+    <input type="text" id="largeKey" name="largeKey" required>
+</div>
+<div>
+    <label for="largeName">Large Name:</label>
+    <input type="text" id="largeName" name="largeName" required>
+  </div>
+<div>
+  <label for="smallKey">Small Key:</label>
+  <input type="text" id="smallKey" name="smallKey" required>
+</div>
+<div>
+  <label for="smallName">Small Name:</label>
+  <input type="text" id="smallName" name="smallName" required>
+</div>
+<div>
+  <label for="link1Name">Link 1 Name:</label>
+  <input type="text" id="link1Name" name="link1Name" required>
+</div>
+<div>
+  <label for="link1">Link 1:</label>
+  <input type="text" id="link1" name="link1" required>
+</div>
+  <button type="submit">Submit</button>
+  <div class="eibtn">
+    <button id="import">Import</button>
+    <input type="file" accept=".diveos" id="importInput" style="display: none;">
+    <button id="export">Export</button>
+  </div>
+</form>
+</body>
+
+<script src="JavaScript/connection.js"></script>
+<script src="JavaScript/popup.js"></script>
+<script src="JavaScript/cache.js"></script>
+<script src="JavaScript/import.js"></script>
+<script src="JavaScript/export.js"></script>

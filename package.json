@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "discord-rpc": "^4.0.1",
+    "express": "^4.18.2"
+  },
+  "name": "DiveOS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^24.4.0"
+  },
+  "build": {
+    "appId": "v1.0",
+    "win": {
+      "target": "nsis",
+      "icon": "icons/500.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    }
+  },
+  "author": "Arusu",
+  "license": "ISC",
+  "description": "DiveOS RPC Desktop Client."
+}

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    min-width: 450px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    max-width: 450px;
+    max-height: 300px;
+    overflow: auto;
+    margin: 0 auto;
+    background-color: #ffd9e6; /* Cherry pink background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  button[type="submit"] {
+    background-color: #ff66b3; /* Cherry pink submit button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width:90%;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #ff4da6; /* Darker cherry pink on hover */
+  }
+  .eibtn{
+    display: flex;
+    flex-direction: row;
+  }
+  #import{
+    background-color: #ff66b3; /* Cherry pink submit button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width:43%;
+    margin-right:5px
+  }
+  #export{
+    background-color: #ff66b3; /* Cherry pink submit button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width:43%;
+  }
+
+  .alert {
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px auto; /* Center horizontally */
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    border: #ff4da6 1px solid;
+    text-align: center; /* Center text within the alert */
+  }
